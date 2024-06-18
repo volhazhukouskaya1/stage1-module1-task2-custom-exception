@@ -15,14 +15,15 @@ public class StudentManager {
               result = true ;
           }
 
-          if (result) {
-              Student.getValueOf(studentID);
-          }
-          else
-          {
-              throw new StudentNotFoundException("Could not find student with ID " + studentID);
-          }
 
+      }
+
+      if (result) {
+          Student.getValueOf(studentID);
+      }
+      else
+      {
+          throw new StudentNotFoundException("Could not find student with ID " + studentID);
       }
       return Student.getValueOf(studentID);
   }
